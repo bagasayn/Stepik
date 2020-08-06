@@ -85,3 +85,10 @@ replace(oldValue: String, newValue: String, ignoreCase) - возвращает �
     println("hello".reversed())     // olleh
     println("123".reversed())       // 321
     println("привет!".reversed())   // !тевирп
+
+Функции, основанные на substring:
+
+    substringAfter(delimiter: [String/Char]) - возвращает участок строки после первого попавшегося delimiter
+    substringAfterLast(delimiter: [String/Char]) - возвращает участок строки после последнего попавшегося delimiter
+    substringBefore(delimiter: [String/Char]) - возвращает участок строки до первого попавшегося delimiter
+    substringBeforeLast(delimiter: [String/Char]) - возвращает участок строки до последнего попавшегося delimiter
