@@ -1,15 +1,17 @@
-import kotlin.math.*
 
 val scan = java.util.Scanner(System.`in`)
 fun main() {
 
-    Rez(scan.nextInt(),scan.nextDouble())
+    val rez = ReturnSolve()
+    print(rez.A.equals(rez.B, true))
 
 
 }
-class Rez(val A: Int, val B: Double){
-    init {
+class ReturnSolve(){
+    val A: String = scan.next()
+    val B: String = scan.next()
 
-        }
-    }
+
+
+}
 
