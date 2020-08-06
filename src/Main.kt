@@ -9,7 +9,7 @@ fun main() {
 }
 class Rez(val A: Int, val B: Double){
     init {
-        
+
         }
     }
 
