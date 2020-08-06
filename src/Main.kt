@@ -3,17 +3,19 @@ val scan = java.util.Scanner(System.`in`)
 fun main() {
 
     val rez = ReturnSolve()
-    println("${rez.A.replace(rez.B,"_")} ${countSubstring(rez.A,rez.B)}")
+    if(rez.A.isLetter()) {
+        when {
+            rez.A.toLowerCase() == rez.A -> print(rez.A.toUpperCase())
+            rez.A.toUpperCase() == rez.A -> print(rez.A.toLowerCase())
 
+        }
+    }else print("incorrect")
 
 }
 
-fun countSubstring(s: String, sub: String): Int = s.split(sub).size - 1
 
 class ReturnSolve(){
-    val A: String = scan.next()
-    val B: String = scan.next()
-
+    val A: Char = scan.next().first()
 
 }
 
