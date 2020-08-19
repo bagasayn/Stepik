@@ -17,4 +17,7 @@ class Dog(private val name:String= "-"){
         println("Имя собаки $name")
     }
 }
-
+//Имя собаки -
+//Имя собаки max
+//Имя собаки Maxi
+//Имя собаки Maxi и кличка Dog
