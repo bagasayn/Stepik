@@ -1,19 +1,20 @@
+import java.util.Scanner
 
 val scan = java.util.Scanner(System.`in`)
 fun main() {
-
-    val rez = ReturnSolve()
-    println("${rez.A.replace(rez.B,"_")} ${countSubstring(rez.A,rez.B)}")
+    val dog1 = Dog()
+    val dog2 = Dog("max")
+    val dog3 = Dog("Maxi","Dog")
 
 
 }
+class Dog(private val name:String= "-"){
 
-fun countSubstring(s: String, sub: String): Int = s.split(sub).size - 1
-
-class ReturnSolve(){
-    val A: String = scan.next()
-    val B: String = scan.next()
-
-
+    constructor(name:String, nextName:String) : this(name){
+        print("Имя собаки $name и кличка $nextName")
+    }
+    init{
+        println("Имя собаки $name")
+    }
 }
 
